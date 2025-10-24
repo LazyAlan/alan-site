@@ -6,10 +6,23 @@
 
 html,
 body {
-  font-size: 62.5%;
   min-height: 100vh;
   background-color: #1e1e1e;
   color: #ffffff;
 }
 
-$theme-color: FD6F00;
+@font-face {
+  font-family: "ABIMO";
+  src: url("@/assets/ABIMO.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-size-small: 0.875em;
+$font-size-normal: 1em;
+$font-size-large: 1.5em;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+$theme-color: #fd6f00;
