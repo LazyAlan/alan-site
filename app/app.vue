@@ -1,12 +1,19 @@
 <template>
   <div class="app-container">
     <NuxtRouteAnnouncer />
-    <div class="nav-box">
+    <div class="app-box">
       <NavigationBar />
+      <NuxtPage />
     </div>
-    <NuxtPage />
   </div>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: "Alan's site",
+  description: "This is my personal site",
+})
+</script>
 
 <style scoped lang="scss">
 .app-container {
@@ -21,7 +28,7 @@
     width: 90vw;
   }
 
-  .nav-box {
+  .app-box {
     width: 100%;
   }
 }
