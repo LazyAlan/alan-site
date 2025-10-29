@@ -2,13 +2,13 @@
     <div class="the-hero">
         <div class="intro">
             <p class="hi">嗨，我是 <span class="name">Alan Xu</span></p>
-            <p class="skilled">Web & Game Developer</p>
+            <p class="skilled">Web & 游戏 开发者</p>
             <p class="intro-text">深耕 Web 与游戏开发的数字游民（心态），始终以简单、优雅实现为目标，在全栈开发与引擎应用中持续精进。既熟练驾驭前后端框架，也能在 Unity
                 引擎中打磨游戏渲染与玩法逻辑，用高效代码实现流畅体验与视觉呈现的平衡。我坚信终身学习是技术人的核心竞争力，始终保持学徒心态，积极探索新技术，力求在每个项目中交付卓越成果。</p>
         </div>
         <div class="avatar">
             <div class="avatar-frame">
-                <img src="/images/son.png" alt="" />
+                <img src="/images/son.png" alt="my lovely child" />
             </div>
         </div>
     </div>
@@ -76,8 +76,7 @@
             position: relative;
             padding: 3px;
             z-index: 1;
-            // background: url(/images/son.png) no-repeat center;
-            // background-size: convert;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -85,6 +84,12 @@
                 border-radius: 50%;
                 display: block;
                 object-fit: cover;
+                transition: .5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: .5s;
+                }
             }
 
             &::before {
@@ -94,13 +99,6 @@
                 border-radius: 50%;
                 padding: 3px; // 边框宽度
                 background: linear-gradient(135deg, #ff0080, #7928ca, #00ffff);
-                // -webkit-mask:
-                //     linear-gradient(#fff 0 0) content-box,
-                //     linear-gradient(#fff 0 0);
-                // -webkit-mask-composite: xor;
-                /* 关键：只显示边框区域 */
-                // mask-composite: exclude;
-                // 使用层级代替兼容性方案
                 z-index: -1;
             }
 
@@ -111,6 +109,20 @@
                 top: 90%;
                 left: 35%;
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .intro,
+        .avatar {
+            flex: 1;
+            width: 100%;
+        }
+
+        .avatar {
+            margin-top: 2em;
         }
     }
 }

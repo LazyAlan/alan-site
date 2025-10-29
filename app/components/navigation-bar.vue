@@ -1,7 +1,7 @@
 <template>
     <nav class="navigation-bar">
-        <div class="logo">Alan's site</div>
-        <div class="nav">
+        <div class="logo">Alan's shabby little website</div>
+        <!-- <div class="nav">
             <ul class="nav-ul">
                 <li>首页</li>
                 <li>关于</li>
@@ -21,17 +21,17 @@
                     <li>联系我</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </nav>
 </template>
 
-<script setup lang='ts'>
+<!-- <script setup lang='ts'>
 const hamburgerIsShow = ref(false);
 
 const hamburgerClick = () => {
     hamburgerIsShow.value = !hamburgerIsShow.value;
 };
-</script>
+</script> -->
 
 <style scoped lang="scss">
 @use "@/assets/global.scss" as *;

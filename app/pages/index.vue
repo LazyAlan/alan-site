@@ -2,11 +2,13 @@
     <div class="container">
         <main>
             <TheHero />
-            <div class="about-box">about</div>
-            <div class="services-box">services</div>
-            <div class="projects-box">projects</div>
+            <TheAbout />
+            <TheService />
+            <TheProject />
         </main>
-        <footer class="footer-box">footer</footer>
+        <footer class="footer">
+            <!-- <div class="slogan">世事总是无常 来日并不方长</div> -->
+        </footer>
     </div>
 </template>
 
@@ -18,5 +20,9 @@
 .container {
     display: flex;
     flex-direction: column;
+
+    .footer {
+        height: 100px;
+    }
 }
 </style>

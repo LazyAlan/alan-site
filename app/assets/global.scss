@@ -27,3 +27,37 @@ $font-weight-normal: 400;
 $font-weight-bold: 600;
 
 $theme-color: #fd6f00;
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100vw;
+  }
+}
+
+/* 改变默认滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px; /* 垂直滚动条宽度 */
+  height: 6px; /* 水平滚动条高度 */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $theme-color;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e06000; /* 悬停时稍微深一点的颜色 */
+}
+
+/* Firefox 支持 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $theme-color transparent;
+}
