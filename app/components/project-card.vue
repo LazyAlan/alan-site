@@ -145,11 +145,32 @@ mapData.set("5", {
             .modal-img {
                 img {
                     border-radius: 8px;
-                    width: clamp(10em, 300px, 20em);
+                    // width: clamp(10em, 300px, 20em);
+                    // width: 100%;
+                }
+
+                @media (max-width: 768px) {
+                    display: none;
                 }
             }
 
             .model-desc {
+                height: 70%;
+                overflow-y: hidden;
+
+                @media (max-width: 768px) {
+                    height: 100%;
+                }
+
+                @media (max-width: 520px) {
+                    height: 80%;
+                }
+
+                @media (max-width: 420px) {
+                    height: 60%;
+                }
+
+
                 .modal-title {
                     margin: 0 auto;
                     font-size: 2em;
@@ -159,7 +180,7 @@ mapData.set("5", {
 
                 .desc {
                     overflow-y: auto;
-                    max-height: 580px;
+                    height: 80%;
                     line-height: 1.5;
                     white-space: pre-line;
                 }
