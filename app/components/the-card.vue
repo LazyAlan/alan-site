@@ -1,7 +1,7 @@
 <template>
     <div class="card-container">
         <div class="icon">
-            <img :src="icon" alt="icon" />
+            <img :src="icon" alt="icon">
         </div>
         <div class="title">
             {{ title }}
