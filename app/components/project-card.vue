@@ -141,6 +141,7 @@ mapData.set("5", {
         .modal-content {
             display: flex;
             gap: 1.2em;
+            height: 100%;
 
             .modal-img {
                 img {
@@ -155,21 +156,8 @@ mapData.set("5", {
             }
 
             .model-desc {
-                height: 70%;
+                height: 100%;
                 overflow-y: hidden;
-
-                @media (max-width: 768px) {
-                    height: 100%;
-                }
-
-                @media (max-width: 520px) {
-                    height: 80%;
-                }
-
-                @media (max-width: 420px) {
-                    height: 60%;
-                }
-
 
                 .modal-title {
                     margin: 0 auto;
